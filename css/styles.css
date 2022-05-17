@@ -194,7 +194,17 @@ color: var(--link-text-color);
 /* MAIN */
 
 .hero{
-    background-color: var(--secondary-background-color);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -202,20 +212,12 @@ color: var(--link-text-color);
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid black;
-    
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4)
-    ),
-    url("./images/hero.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
+
+
 .header{
 color: var(--rare-white-text-color);
-background-color: var(--secondary-background-color);
+/* background-color: var(--secondary-background-color); */
 
 font-weight: 900;
 font-size: 44px;
@@ -223,6 +225,7 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+padding-bottom: 30px;
 }
 .button{
     border-radius: 4px;
@@ -312,7 +315,12 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--secondary-text-color);
 }
-/* WHAT WE DO */
+.background-icon{
+   padding: 25px 100px;
+   justify-content: center;
+   align-items: center;
+}
+/* ............................................................WHAT WE DO .............................*/
 .what-we-do{
     padding-top: 0;
 }
@@ -361,12 +369,41 @@ margin-bottom: 10px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
-
-.network-icon:hover,
-.network-icon:focus{
-    color: red
+/* ................................... ..... . . .  .. .CLIENTS...................................... */
+.clients-list{
+    display: flex;  
+    margin-bottom: 94px;
 }
-
+.clients-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 170px;
+}
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-link {
+    fill: #AFB1B8;
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--button-background-color);
+  border: 1px solid var(--button-background-color);
+}
+.clients-logo{
+    fill: currentColor;
+}
 /* ....................PORTFOLIO................ */
 .button-list{
     display: flex;

@@ -372,36 +372,42 @@ margin-bottom: 10px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
-.network-list{
-    display: flex;
-    justify-content: center;
-}
+
 .section .team .list-item{
     box-shadow: 0 10px 10px -5px rgba(0,0,0,0.3);
 }
-.network-item{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 44px;
-padding: 0px;
- border: none;
- background-color: var(--button-color);
- border-radius: 50%;
- background-repeat: no-repeat;
-background-size: 20px;
-background-position: center;
-color: #757575;
-margin-bottom: 30px;
-margin-top: 16px;
-}
-.network-item:not(:last-child){
-    margin-right: 10px;
+
+ .network-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.network-icon{
+
+.network-link:hover,
+.netwotk-link:focus{
+    background-color: var(--button-background-color);
+    border-radius: 50%;
+    fill: #ffffff;
+ }
+ /*
+.network-item:not(:last-child){
+    margin-right: 10px;
+}  */
+
+
+.network-link{
     fill: #AFB1B8;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 /* ................................... ..... . . .  .. .CLIENTS...................................... */
 .clients-list{
@@ -591,17 +597,43 @@ letter-spacing: 0.03em;
     text-decoration: none;
 }
 
-.join-list{
+.footer-finish{
     display: flex;
-    justify-content: center;
+    align-items: baseline;
 }
-.join-us{
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--rare-white-text-color);
+.join-info{
+    display: block;
+    margin-left: 70px;
+}
 
+.join-us{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--rare-white-text-color);
+    margin-bottom: 30px;
+    }
+.join-list{
+display: flex;
+justify-content: center;
+}
+.join-item:not(:last-child) {
+    margin-right: 10px;
+  }
+.join-link{
+fill: #ffffff;
+width: 44px;
+height: 44px;
+display: flex;
+background-color: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+justify-content: center;
+ align-items: center;
+}
+.join-link:hover,
+.join-link:focus{
+    background-color: var(--button-background-color);
 }

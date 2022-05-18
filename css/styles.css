@@ -59,7 +59,7 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid tomato; 
+    /* outline: 2px solid tomato;  */
 }
 
 /* LOGO */
@@ -319,8 +319,10 @@ color: var(--secondary-text-color);
    padding: 25px 100px;
    justify-content: center;
    align-items: center;
+   margin-bottom: 30px;
+   background-color: #dbdbde;
 }
-/* ............................................................WHAT WE DO .............................*/
+/* .............................................WHAT WE DO .............................*/
 .what-we-do{
     padding-top: 0;
 }
@@ -337,6 +339,7 @@ color: var(--secondary-text-color);
     margin-right: 30px;
 }
 /* .................................................COMMAND ......................................*/
+
 .team-list{
     display: flex;
 }
@@ -369,11 +372,44 @@ margin-bottom: 10px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
+.network-list{
+    display: flex;
+    justify-content: center;
+}
+.section .team .list-item{
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.3);
+}
+.network-item{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 44px;
+padding: 0px;
+ border: none;
+ background-color: var(--button-color);
+ border-radius: 50%;
+ background-repeat: no-repeat;
+background-size: 20px;
+background-position: center;
+color: #757575;
+margin-bottom: 30px;
+}
+.network-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.network-icon{
+    fill: #AFB1B8;
+}
+.network-icon:hover,
+.network-icon:focus{
+    background-color: var(--button-background-color);
+    fill: var(--button-color);
+}
 /* ................................... ..... . . .  .. .CLIENTS...................................... */
 .clients-list{
-    display: flex;  
-    margin-bottom: 94px;
-}
+    display: flex; 
+ }
 .clients-item{
     display: flex;
     align-items: center;
